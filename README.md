@@ -1,4 +1,4 @@
-Prezto — Instantly Awesome Zsh ( MODDED BY Subho007 )
+Prezto —  MODDED BY subho007
 =====================================================
 
 Prezto is the configuration framework for [Zsh][1]; it enriches the command line
