@@ -18,13 +18,19 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 
 source $(brew --prefix nvm)/nvm.sh
 
-source "${ZDOTDIR:-$HOME}/.functions.zsh"
-
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
 
 source /usr/local/share/zsh/site-functions/_aws
 
 source /usr/local/share/zsh/site-functions
+
+# 
+# Load private configuration file
+#
+
+if [ -f $HOME/.zprezto/.localrc ]; then
+  source $HOME/.zprezto/.localrc
+fi
 
 #
 # Python Hostory and autocompletion support
