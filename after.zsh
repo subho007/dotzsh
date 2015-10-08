@@ -5,6 +5,7 @@
 #   Subho Halder <subho.halder@gmail.com>
 #
 #
+unalias gg
 unalias gs
 unalias gCa
 unalias gS
