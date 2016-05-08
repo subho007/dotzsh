@@ -31,13 +31,6 @@ x () {
    fi
 }
 
-#
-# Mailpile start
-#
-mp () {
-  ~/Documents/mailpile/mp
-}
-
 
 # Functions to activate environement variables
 # Example:
@@ -56,6 +49,11 @@ function sherlock {
 function irene {
     source ~/ENV/irene/bin/activate
     cd $HOME/Appknox/irene
+}
+
+function hawkins {
+    source ~/ENV/hawkins/bin/activate
+    cd $HOME/Appknox/hawkins
 }
 
 function m {
