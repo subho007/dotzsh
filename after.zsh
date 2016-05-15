@@ -25,7 +25,7 @@ source /usr/local/share/zsh/site-functions/_aws
 
 source /usr/local/share/zsh/site-functions
 
-# 
+#
 # Load private configuration file
 #
 
@@ -51,3 +51,5 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 # Ruby using rbenv
 #
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+export JAVA_HOME=$(/usr/libexec/java_home)

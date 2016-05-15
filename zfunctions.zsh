@@ -56,6 +56,16 @@ function hawkins {
     cd $HOME/Appknox/hawkins
 }
 
+function androguard {
+    source ~/ENV/androguard/bin/activate
+    cd $HOME/Appknox/androguard
+}
+
+function sherlock2 {
+    source ~/ENV/sherlock2/bin/activate
+    cd $HOME/Appknox/sherlock2
+}
+
 function m {
     if [[ $1 = "" ]]; then
         mvim .

@@ -82,7 +82,7 @@
 
 [core]
     # Use custom `.gitignore` and `.gitattributes`
-	excludesfile = /Users/dhilipsiva/.gitignore_global
+	excludesfile = /Users/subho/.gitignore_global
     attributesfile = ~/.gitattributes
     # Treat spaces before tabs and all kinds of trailing whitespace as an error.
     # [default] trailing-space: looks for spaces at the end of a line
@@ -150,3 +150,9 @@
 	clean = git lfs clean %f
 	smudge = git lfs smudge %f
 	required = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /opt/homebrew-cask/Caskroom/sourcetree/2.2.4/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
