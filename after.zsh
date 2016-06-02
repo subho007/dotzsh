@@ -15,8 +15,6 @@ HELPDIR=/usr/local/share/zsh/help
 
 export NVM_DIR=~/.nvm
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
 fpath=(/usr/local/share/zsh-completions $fpath)
 
 source $(brew --prefix nvm)/nvm.sh
