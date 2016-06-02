@@ -53,3 +53,8 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 export JAVA_HOME=$(/usr/libexec/java_home)
+
+#
+# Load antigen.zsh
+#
+source $HOME/.zprezto/antigen.zsh
