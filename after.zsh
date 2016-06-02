@@ -58,3 +58,7 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 # Load antigen.zsh
 #
 source $HOME/.zprezto/antigen.zsh
+
+antigen bundle Tarrasch/zsh-autoenv
+
+antigen apply
