@@ -31,3 +31,5 @@ source $HOME/.zprezto/zfunctions.zsh
 
 ##################### AFTER.zsh ########################
 source $HOME/.zprezto/after.zsh
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
