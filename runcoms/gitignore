@@ -36,3 +36,7 @@
 ehthumbs.db
 Icon?
 Thumbs.db
+
+# Autoenv ZSH Ignore #
+######################
+.autoenv.zsh

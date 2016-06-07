@@ -46,6 +46,11 @@ function sherlock {
     cd $HOME/Appknox/sherlock
 }
 
+function sherlock3 {
+    source ~/ENV/sherlock3/bin/activate
+    cd $HOME/Appknox/sherlock
+}
+
 function irene {
     source ~/ENV/irene/bin/activate
     cd $HOME/Appknox/irene
@@ -99,4 +104,12 @@ function server() {
 
 function tunnel {
     ngrok -subdomain=subho007 $1
+}
+
+function rmpyc {
+	find . -name "*.pyc" -exec rm -rf {} \;
+}
+
+function rmed {
+	find . -empty  -type d ! -path "./.git*" -delete
 }
