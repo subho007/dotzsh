@@ -1,0 +1,33 @@
+windows:
+  - name: appknox
+    root: ~/Appknox
+    layout: tiled
+    panes:
+      - commands:
+          - source ~/ENV/moriarty/bin/activate
+          - cd moriarty
+          - ./manage.py runserver 0.0.0.0:8888
+      - commands:
+          - source ~/ENV/moriarty/bin/activate
+          - cd moriarty
+          - ./manage.py devices
+      - commands:
+          - source ~/ENV/moriarty/bin/activate
+          - cd moriarty
+          - ./manage.py websockify
+      - VNC_SECRET="F3A3EF31-0EFB-459D-8F2A-0C02B60A25CF" DEVICES_PORT=8888 minivnc
+      - minio server ~/Projects/minio
+      - commands:
+          - source ~/ENV/sherlock3/bin/activate
+          - cd sherlock
+          - source ./scripts/envs.sh
+          - ./manage.py runserver
+      - commands:
+          - source ~/ENV/sherlock3/bin/activate
+          - cd sherlock
+          - source ./scripts/envs.sh
+          - ./scripts/dev_celery.sh
+      - commands:
+          - source ~/ENV/irene2/bin/activate
+          - cd irene
+          - ember serve
