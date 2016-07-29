@@ -56,6 +56,11 @@ function irene {
     cd $HOME/Appknox/irene
 }
 
+function irene2 {
+    source ~/ENV/irene2/bin/activate
+    cd $HOME/Appknox/irene
+}
+
 function hawkins {
     source ~/ENV/hawkins/bin/activate
     cd $HOME/Appknox/hawkins
