@@ -118,3 +118,7 @@ function rmpyc {
 function rmed {
 	find . -empty  -type d ! -path "./.git*" -delete
 }
+
+function run-appknox {
+    itermocil appknox
+}
