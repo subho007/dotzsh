@@ -66,10 +66,3 @@ antigen bundle Tarrasch/zsh-autoenv
 
 antigen apply
 
-#
-# Apply gitsome
-#
-autoload bashcompinit
-bashcompinit
-source ~/.zprezto/scripts/gh_complete.sh
-
