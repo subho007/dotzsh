@@ -1,0 +1,25 @@
+windows:
+  - name: appknox-old
+    root: ~/Appknox
+    layout: tiled
+    panes:
+      - commands:
+          - source ~/ENV/sherlock2/bin/activate
+          - cd sherlock2
+          - ./manage.py runserver
+      - commands:
+          - source ~/ENV/sherlock2/bin/activate
+          - cd sherlock2
+          - ./scripts/dev_celery.sh
+      - commands:
+          - source ~/ENV/sherlock2/bin/activate
+          - cd sherlock2
+          - ./scripts/fakes3.sh
+      - commands:
+          - source ~/ENV/sherlock2/bin/activate
+          - cd sherlock2/sockets
+          - node index.js
+      - commands:
+          - source ~/ENV/irene2/bin/activate
+          - cd irene2
+          - ember serve
