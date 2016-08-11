@@ -123,5 +123,5 @@ function run-appknox {
     itermocil appknox
 }
 function run-appknox-old {
-    itermcoil appknox-old
+    itermocil appknox-old
 }
