@@ -41,9 +41,9 @@ x () {
 #}
 #
 
-function sherlock {
-    source ~/ENV/sherlock/bin/activate
-    cd $HOME/Appknox/sherlock
+function sherlock2 {
+    source ~/ENV/sherlock2/bin/activate
+    cd $HOME/Appknox/sherlock2
 }
 
 function sherlock3 {
@@ -58,7 +58,7 @@ function irene {
 
 function irene2 {
     source ~/ENV/irene2/bin/activate
-    cd $HOME/Appknox/irene
+    cd $HOME/Appknox/irene2
 }
 
 function hawkins {
@@ -121,4 +121,7 @@ function rmed {
 
 function run-appknox {
     itermocil appknox
+}
+function run-appknox-old {
+    itermcoil appknox-old
 }
