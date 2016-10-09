@@ -43,14 +43,6 @@ fi
 export PYTHONSTARTUP=$HOME/.pythonrc
 
 #
-# Android Source
-#
-export ANDROID_HOME=$HOME/sdk
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/build-tools/21.1.2
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-
-#
 # Ruby using rbenv
 #
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
@@ -65,4 +57,3 @@ source $HOME/.zprezto/antigen.zsh
 antigen bundle Tarrasch/zsh-autoenv
 
 antigen apply
-
