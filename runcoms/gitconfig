@@ -1,7 +1,7 @@
 [user]
     name = Subho Halder
     email = subho.halder@gmail.com
-	signingkey = 3B089F65FED77B22
+	signingkey = FED77B22
 
 [credential]
     helper = osxkeychain
@@ -157,3 +157,5 @@
 [mergetool "sourcetree"]
 	cmd = /opt/homebrew-cask/Caskroom/sourcetree/2.2.4/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+[commit]
+	gpgsign = true
