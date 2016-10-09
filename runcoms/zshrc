@@ -20,11 +20,6 @@ if [[ -s "$HOME/.pythonrc" ]]; then
   export PYTHONSTARTUP="$HOME/.pythonrc"
 fi
 
-# Customize to your needs...
-
-PERL_MB_OPT="--install_base \"/Users/subho/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/Users/subho/perl5"; export PERL_MM_OPT;
-
 # Load the functions and aliases
 
 source $HOME/.zprezto/zfunctions.zsh
