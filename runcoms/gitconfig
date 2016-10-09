@@ -10,7 +10,7 @@
     autosetuprebase = always
 
 [github]
-    user = dhilipsiva
+    user = subho007
 
 [diff]
     tool = vimdiff
@@ -153,7 +153,7 @@
 	required = true
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /opt/homebrew-cask/Caskroom/sourcetree/2.2.4/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
