@@ -13,14 +13,10 @@ unalias run-help
 autoload run-help
 HELPDIR=/usr/local/share/zsh/help
 
-export NVM_DIR=~/.nvm
-
 bindkey -v
 bindkey "^R" history-incremental-search-backward
 
 fpath=(/usr/local/share/zsh-completions $fpath)
-
-source $(brew --prefix nvm)/nvm.sh
 
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
 
