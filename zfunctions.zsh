@@ -125,3 +125,11 @@ function run-appknox {
 function run-appknox-old {
     itermocil appknox-old
 }
+function skype {
+    local number="${1:-200}"
+    open -na /Applications/Skype.app --args -DataPath /Users/$(whoami)/Library/Application\ Support/Skype${number}
+}
+function skype-del {
+    local number="${1:-200}"
+    rm -rf /Users/$(whoami)/Library/Application\ Support/Skype${number}
+}
