@@ -1,7 +1,7 @@
 [user]
     name = Subho Halder
     email = subho.halder@gmail.com
-	signingkey = FED77B22
+	signingkey = 3F1E48B1CEFB136D971A47693B089F65FED77B22
 
 [credential]
     helper = osxkeychain
@@ -93,6 +93,7 @@
     # Make `git rebase` safer on OS X
     # More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
     trustctime = false
+	autocrlf = false
 
 [color]
     # Use colors in Git commands that are capable of colored output when
@@ -159,3 +160,5 @@
 	trustExitCode = true
 [commit]
 	gpgsign = true
+[gpg]
+	program = /usr/local/bin/gpg
