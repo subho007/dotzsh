@@ -78,9 +78,9 @@ function sherlock2 {
 
 function m {
     if [[ $1 = "" ]]; then
-        mvim .
+        nvim .
     else
-        mvim $*
+        nvim $*
     fi
 }
 
